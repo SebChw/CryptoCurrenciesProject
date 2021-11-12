@@ -1,3 +1,5 @@
+Console application that models Currency exchange. You have hierarchy of currencies available. You can create a traders that posses some currencies and can exchange them or gamble.
+
 To compile everything go to the src folder and run: g++ -o main.exe *.cpp ./Utils/*.cpp ./Currencies/*.cpp ./Currencies/CryptoCurrencies/*.cpp
 
 If you want to see the documentation with classes descripted go to the documentation/index.html
