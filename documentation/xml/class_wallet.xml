@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_wallet" kind="class" language="C++" prot="public">
+    <compoundname>Wallet</compoundname>
+    <includes refid="_wallet_8h" local="no">Wallet.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_wallet_1a4cb7e1c5a21fb53b84124b5f46c2c5a7" prot="private" static="no" mutable="no">
+        <type>map&lt; string, T * &gt;</type>
+        <definition>map&lt;string, T *&gt; Wallet&lt; T &gt;::currencies</definition>
+        <argsstring></argsstring>
+        <name>currencies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="13" column="9" bodyfile="Utils/Wallet.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_wallet_1a84972a05bcc6505e5eec3e6ae88988a8" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Wallet&lt; T &gt;::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="14" column="12" bodyfile="Utils/Wallet.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_wallet_1a9c9e8f30e37cc965b92781c9aa50a7c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Wallet&lt; T &gt;::Wallet</definition>
+        <argsstring>(string a)</argsstring>
+        <name>Wallet</name>
+        <param>
+          <type>string</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>owner of the wallet </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="18" column="5" bodyfile="Utils/Wallet.h" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wallet_1a92c90470229aed8a1c897bb43fffdb77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Wallet&lt; T &gt;::~Wallet</definition>
+        <argsstring>()</argsstring>
+        <name>~Wallet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="23" column="5" bodyfile="Utils/Wallet.h" bodystart="23" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wallet_1a09e53313e5e8eb1db7c653f661a92967" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Wallet&lt; T &gt;::toString</definition>
+        <argsstring>(bool is_short)</argsstring>
+        <name>toString</name>
+        <param>
+          <type>bool</type>
+          <declname>is_short</declname>
+        </param>
+        <briefdescription>
+<para>Function printing content of the wallet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_short</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to print all info or only amount </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="33" column="10" bodyfile="Utils/Wallet.h" bodystart="33" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wallet_1af66a7b74f0a389be6d3a788677238132" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Wallet&lt; T &gt;::addMoney</definition>
+        <argsstring>(string currency_name, float amount)</argsstring>
+        <name>addMoney</name>
+        <param>
+          <type>string</type>
+          <declname>currency_name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Function that increases amount of given currency in the wallet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currency_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>currency available in the wallet for which we want to increase amount </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>how much to add to the wallet </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>raise exception here instead</para>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="51" column="10" bodyfile="Utils/Wallet.h" bodystart="51" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wallet_1a66de17625e9006d979b2837ee5343d6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_wallet" kindref="compound">Wallet</ref> &amp;</type>
+        <definition>Wallet &amp; Wallet&lt; T &gt;::operator+=</definition>
+        <argsstring>(T *currency)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>T *</type>
+          <declname>currency</declname>
+        </param>
+        <briefdescription>
+<para>Function that adds currency object to the wallet, so that wallet contains this currency now. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="64" column="12" bodyfile="Utils/Wallet.h" bodystart="64" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wallet_1a855a707a9e9444b15dc71d330d9df600" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_wallet" kindref="compound">Wallet</ref> &amp;</type>
+        <definition>Wallet &amp; Wallet&lt; T &gt;::operator-=</definition>
+        <argsstring>(string currency_name)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>string</type>
+          <declname>currency_name</declname>
+        </param>
+        <briefdescription>
+<para>Function that removes currency object from the wallet. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Again raise exception here if currency is missing</para>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="72" column="12" bodyfile="Utils/Wallet.h" bodystart="72" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wallet_1aab75a448a9efe04c5ddec66a575e6bf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Wallet&lt; T &gt;::isEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>To check whether wallet contains any currencies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="88" column="10" bodyfile="Utils/Wallet.h" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wallet_1a85bcf0dd761ad824b083e58a1dbd91c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * Wallet&lt; T &gt;::getRandom</definition>
+        <argsstring>()</argsstring>
+        <name>getRandom</name>
+        <briefdescription>
+<para>choosing random currency from the wallet </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>object of the template type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="96" column="7" bodyfile="Utils/Wallet.h" bodystart="96" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wallet_1ac1eca581dd2bee3fbd4272927b0b85a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Wallet&lt; T &gt;::sumOfAll</definition>
+        <argsstring>()</argsstring>
+        <name>sumOfAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>sum of amount of currencies in the wallet </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="106" column="11" bodyfile="Utils/Wallet.h" bodystart="106" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wallet_1aa44cb46b28d88bd1173008e33e19257d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * Wallet&lt; T &gt;::getCurrency</definition>
+        <argsstring>(string name)</argsstring>
+        <name>getCurrency</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Wallet.h" line="117" column="7" bodyfile="Utils/Wallet.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Function that represent container for currenciess. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/Wallet.h" line="11" column="1" bodyfile="Utils/Wallet.h" bodystart="12" bodyend="121"/>
+    <listofallmembers>
+      <member refid="class_wallet_1af66a7b74f0a389be6d3a788677238132" prot="public" virt="non-virtual"><scope>Wallet</scope><name>addMoney</name></member>
+      <member refid="class_wallet_1a4cb7e1c5a21fb53b84124b5f46c2c5a7" prot="private" virt="non-virtual"><scope>Wallet</scope><name>currencies</name></member>
+      <member refid="class_wallet_1aa44cb46b28d88bd1173008e33e19257d" prot="public" virt="non-virtual"><scope>Wallet</scope><name>getCurrency</name></member>
+      <member refid="class_wallet_1a85bcf0dd761ad824b083e58a1dbd91c3" prot="public" virt="non-virtual"><scope>Wallet</scope><name>getRandom</name></member>
+      <member refid="class_wallet_1aab75a448a9efe04c5ddec66a575e6bf1" prot="public" virt="non-virtual"><scope>Wallet</scope><name>isEmpty</name></member>
+      <member refid="class_wallet_1a66de17625e9006d979b2837ee5343d6b" prot="public" virt="non-virtual"><scope>Wallet</scope><name>operator+=</name></member>
+      <member refid="class_wallet_1a855a707a9e9444b15dc71d330d9df600" prot="public" virt="non-virtual"><scope>Wallet</scope><name>operator-=</name></member>
+      <member refid="class_wallet_1a84972a05bcc6505e5eec3e6ae88988a8" prot="private" virt="non-virtual"><scope>Wallet</scope><name>owner</name></member>
+      <member refid="class_wallet_1ac1eca581dd2bee3fbd4272927b0b85a0" prot="public" virt="non-virtual"><scope>Wallet</scope><name>sumOfAll</name></member>
+      <member refid="class_wallet_1a09e53313e5e8eb1db7c653f661a92967" prot="public" virt="non-virtual"><scope>Wallet</scope><name>toString</name></member>
+      <member refid="class_wallet_1a9c9e8f30e37cc965b92781c9aa50a7c3" prot="public" virt="non-virtual"><scope>Wallet</scope><name>Wallet</name></member>
+      <member refid="class_wallet_1a92c90470229aed8a1c897bb43fffdb77" prot="public" virt="non-virtual"><scope>Wallet</scope><name>~Wallet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

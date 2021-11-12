@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_not_backed_crypto_currency" kind="class" language="C++" prot="public">
+    <compoundname>NotBackedCryptoCurrency</compoundname>
+    <basecompoundref refid="class_crypto_currency" prot="public" virt="non-virtual">CryptoCurrency</basecompoundref>
+    <includes refid="_not_backed_crypto_currency_8h" local="no">NotBackedCryptoCurrency.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_not_backed_crypto_currency_1a19819ea8bcaaac42753973a76295e9ec" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string NotBackedCryptoCurrency::algorithm</definition>
+        <argsstring></argsstring>
+        <name>algorithm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h" line="7" column="12" bodyfile="Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_not_backed_crypto_currency_1a924b528671f0d3b25c94ba4c20170be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NotBackedCryptoCurrency::NotBackedCryptoCurrency</definition>
+        <argsstring>(int, string, int, string)</argsstring>
+        <name>NotBackedCryptoCurrency</name>
+        <param>
+          <type>int</type>
+          <defname>amount</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>work</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>alg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h" line="10" column="5" bodyfile="Currencies/CryptoCurrencies/NotBackedCryptoCurrency.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_not_backed_crypto_currency_1aa4ef055d68868ffb6ddb261cef52974b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NotBackedCryptoCurrency::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_currency_1a88f55ebc519f49fb694aea66bc3ad2bb">toString</reimplements>
+        <briefdescription>
+<para>prints values of all parameters set inside the object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h" line="11" column="10" bodyfile="Currencies/CryptoCurrencies/NotBackedCryptoCurrency.cpp" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_not_backed_crypto_currency_1a4579b5f3cf5c66813a6174f88519e1b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void NotBackedCryptoCurrency::mine</definition>
+        <argsstring>(int)</argsstring>
+        <name>mine</name>
+        <reimplements refid="class_crypto_currency_1a9704d68a1c514bd8eaff52963d2121f8">mine</reimplements>
+        <param>
+          <type>int</type>
+          <declname>rank</declname>
+        </param>
+        <briefdescription>
+<para>Function that check whether we can mine, if yes it performs unit of work and if we mined increase amount of currency. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>integer which rank we need to be able to mine given crypto </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h" line="12" column="10" bodyfile="Currencies/CryptoCurrencies/NotBackedCryptoCurrency.cpp" bodystart="14" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CryptoCurrency</label>
+        <link refid="class_crypto_currency"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Currency</label>
+        <link refid="class_currency"/>
+      </node>
+      <node id="1">
+        <label>NotBackedCryptoCurrency</label>
+        <link refid="class_not_backed_crypto_currency"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CryptoCurrency</label>
+        <link refid="class_crypto_currency"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Currency</label>
+        <link refid="class_currency"/>
+      </node>
+      <node id="1">
+        <label>NotBackedCryptoCurrency</label>
+        <link refid="class_not_backed_crypto_currency"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h" line="5" column="1" bodyfile="Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h" bodystart="6" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_not_backed_crypto_currency_1a19819ea8bcaaac42753973a76295e9ec" prot="private" virt="non-virtual"><scope>NotBackedCryptoCurrency</scope><name>algorithm</name></member>
+      <member refid="class_crypto_currency_1afa02582a8396eb457aee6c673065e0ed" prot="public" virt="non-virtual"><scope>NotBackedCryptoCurrency</scope><name>CryptoCurrency</name></member>
+      <member refid="class_currency_1a1cfa3a4f2ef3f176e3ccb61843c52fce" prot="public" virt="non-virtual"><scope>NotBackedCryptoCurrency</scope><name>Currency</name></member>
+      <member refid="class_crypto_currency_1a9c34730ddc371863503cdcb3dc4e076c" prot="public" virt="virtual"><scope>NotBackedCryptoCurrency</scope><name>generateCurrency</name></member>
+      <member refid="class_currency_1a097d3473c368ad0a8451722b66566d34" prot="public" virt="non-virtual"><scope>NotBackedCryptoCurrency</scope><name>getAmountInWallet</name></member>
+      <member refid="class_currency_1aa58badfdfc8486a41e8f98466ea18c3e" prot="public" virt="non-virtual"><scope>NotBackedCryptoCurrency</scope><name>getName</name></member>
+      <member refid="class_crypto_currency_1a848e1370cd40a8972357970a05ce00d4" prot="public" virt="non-virtual"><scope>NotBackedCryptoCurrency</scope><name>howMuchWork</name></member>
+      <member refid="class_not_backed_crypto_currency_1a4579b5f3cf5c66813a6174f88519e1b5" prot="public" virt="virtual"><scope>NotBackedCryptoCurrency</scope><name>mine</name></member>
+      <member refid="class_not_backed_crypto_currency_1a924b528671f0d3b25c94ba4c20170be3" prot="public" virt="non-virtual"><scope>NotBackedCryptoCurrency</scope><name>NotBackedCryptoCurrency</name></member>
+      <member refid="class_currency_1a04868d88d1ae37a73b3cf5abb7eea0ac" prot="public" virt="non-virtual"><scope>NotBackedCryptoCurrency</scope><name>operator+=</name></member>
+      <member refid="class_currency_1ab9c183b78891ec7fe138c9b83e34497a" prot="public" virt="non-virtual"><scope>NotBackedCryptoCurrency</scope><name>operator-=</name></member>
+      <member refid="class_crypto_currency_1a38c5d1590c96bddd3005efc6942493b8" prot="public" virt="non-virtual"><scope>NotBackedCryptoCurrency</scope><name>performWork</name></member>
+      <member refid="class_not_backed_crypto_currency_1aa4ef055d68868ffb6ddb261cef52974b" prot="public" virt="virtual"><scope>NotBackedCryptoCurrency</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_currency_factory_8h" kind="file" language="C++">
+    <compoundname>CurrencyFactory.h</compoundname>
+    <includes refid="_meme_crypto_currency_8h" local="yes">../Currencies/CryptoCurrencies/MemeCryptoCurrency.h</includes>
+    <includes refid="_not_backed_crypto_currency_8h" local="yes">../Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h</includes>
+    <includes refid="_currency_backed_crypto_currency_8h" local="yes">../Currencies/CryptoCurrencies/CurrencyBackedCryptoCurrency.h</includes>
+    <includes refid="_commodity_backed_crypto_currency_8h" local="yes">../Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h</includes>
+    <includes refid="_fiat_currency_8h" local="yes">../Currencies/FiatCurrency.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="_currency_exchange_8h" local="yes">Utils/CurrencyExchange.h</includedby>
+    <includedby refid="_currency_factory_8cpp" local="yes">Utils/CurrencyFactory.cpp</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>BackedCryptoCurrency.h</label>
+        <link refid="_backed_crypto_currency_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>../Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h</label>
+        <link refid="_commodity_backed_crypto_currency_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../Currencies/CryptoCurrencies/CurrencyBackedCryptoCurrency.h</label>
+        <link refid="_currency_backed_crypto_currency_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../Currencies/CryptoCurrencies/MemeCryptoCurrency.h</label>
+        <link refid="_meme_crypto_currency_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h</label>
+        <link refid="_not_backed_crypto_currency_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../CryptoCurrency.h</label>
+        <link refid="_crypto_currency_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Currency.h</label>
+        <link refid="_currency_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../Currencies/FiatCurrency.h</label>
+        <link refid="_fiat_currency_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Utils/CurrencyFactory.h</label>
+        <link refid="_currency_factory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../../Utils/Wallet.h</label>
+        <link refid="_wallet_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="12">
+        <label>stdlib.h</label>
+      </node>
+      <node id="13">
+        <label>time.h</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Utils/CurrencyExchange.h</label>
+        <link refid="_currency_exchange_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Utils/CurrencyFactory.h</label>
+        <link refid="_currency_factory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Utils/Trader.h</label>
+        <link refid="_trader_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_currency_factory" prot="public">CurrencyFactory</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Currencies/CryptoCurrencies/MemeCryptoCurrency.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Currencies/CryptoCurrencies/CurrencyBackedCryptoCurrency.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Currencies/FiatCurrency.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_currency_factory" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_currency_factory" kindref="compound">CurrencyFactory</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>memeNames[3];</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>cryptoNames[5];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fiatNames[5];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>algorithmNames[3];</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>commodityNames[3];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>createdCurrenciesNames;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_currency_factory_1a6b5b799fee0adcd0ff295936bcfa6b6a" kindref="member">CurrencyFactory</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_currency" kindref="compound">Currency</ref><sp/>*<ref refid="class_currency_factory_1a75fbd30235b72b571b0d6a6eaec0ae77" kindref="member">generateFiatCurrency</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_currency" kindref="compound">Currency</ref><sp/>*<ref refid="class_currency_factory_1acc8e61d01acdbdf91d2fa02dc427d1ca" kindref="member">generateCryptoCurrency</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="class_currency_factory_1ac8c95a7494324d65634fb9561c4e4989" kindref="member">getCreatedCurrenciesNames</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Utils/CurrencyFactory.h"/>
+  </compounddef>
+</doxygen>

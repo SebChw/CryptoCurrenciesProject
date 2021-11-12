@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_currency_backed_crypto_currency_8h" kind="file" language="C++">
+    <compoundname>CurrencyBackedCryptoCurrency.h</compoundname>
+    <includes refid="_backed_crypto_currency_8h" local="yes">BackedCryptoCurrency.h</includes>
+    <includes refid="_wallet_8h" local="yes">../../Utils/Wallet.h</includes>
+    <includedby refid="_currency_factory_8h" local="yes">Utils/CurrencyFactory.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>BackedCryptoCurrency.h</label>
+        <link refid="_backed_crypto_currency_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Currencies/CryptoCurrencies/CurrencyBackedCryptoCurrency.h</label>
+        <link refid="_currency_backed_crypto_currency_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../CryptoCurrency.h</label>
+        <link refid="_crypto_currency_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Currency.h</label>
+        <link refid="_currency_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../../Utils/Wallet.h</label>
+        <link refid="_wallet_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="9">
+        <label>stdlib.h</label>
+      </node>
+      <node id="10">
+        <label>time.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>Currencies/CryptoCurrencies/CurrencyBackedCryptoCurrency.h</label>
+        <link refid="_currency_backed_crypto_currency_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Utils/CurrencyExchange.h</label>
+        <link refid="_currency_exchange_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Utils/CurrencyFactory.h</label>
+        <link refid="_currency_factory_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Utils/Trader.h</label>
+        <link refid="_trader_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_currency_backed_crypto_currency" prot="public">CurrencyBackedCryptoCurrency</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;BackedCryptoCurrency.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Utils/Wallet.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//As<sp/>I<sp/>wanted<sp/>to<sp/>kill<sp/>two<sp/>birds<sp/>with<sp/>one<sp/>stone<sp/>I<sp/>created<sp/>template<sp/>so<sp/>this<sp/>Currency<sp/>can<sp/>be<sp/>backed<sp/>by<sp/>MameCurrency,<sp/>FiatCurrency<sp/>or<sp/>any<sp/>other.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="7" refid="class_currency_backed_crypto_currency" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_currency_backed_crypto_currency" kindref="compound">CurrencyBackedCryptoCurrency</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_backed_crypto_currency" kindref="compound">BackedCryptoCurrency</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>backingCurrency;<sp/></highlight><highlight class="comment">//<sp/>name<sp/>of<sp/>backing<sp/>currency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="class_currency_backed_crypto_currency_1aec801b633eb2b2a5a19493d4abf4a73d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_currency_backed_crypto_currency_1aec801b633eb2b2a5a19493d4abf4a73d" kindref="member">CurrencyBackedCryptoCurrency</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>amount,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lim,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ass,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>curr)<sp/>:<sp/><ref refid="class_backed_crypto_currency" kindref="compound">BackedCryptoCurrency</ref>(amount,<sp/>name,<sp/>lim,<sp/>ass)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backingCurrency<sp/>=<sp/>curr;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_currency_backed_crypto_currency_1af62a9d147cd9511558646d6bac7eee27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_currency_backed_crypto_currency_1af62a9d147cd9511558646d6bac7eee27" kindref="member">toString</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_backed_crypto_currency_1a9e1d36f0266df0d2b6ca36cc034697a9" kindref="member">BackedCryptoCurrency::toString</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Currency<sp/>is<sp/>backed<sp/>by:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>backingCurrency<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27" refid="class_currency_backed_crypto_currency_1acd3e48eed6801aec1507eb8f92498204" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_currency_backed_crypto_currency_1acd3e48eed6801aec1507eb8f92498204" kindref="member">exchange</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;For<sp/>Currency<sp/>BackedCrypto<sp/>Currency<sp/>you<sp/>must<sp/>use<sp/>function<sp/>with<sp/>2<sp/>params!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="37" refid="class_currency_backed_crypto_currency_1aa2c1625cfaf919ec557da48ba6b59e0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_currency_backed_crypto_currency_1aa2c1625cfaf919ec557da48ba6b59e0f" kindref="member">exchange</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amount,<sp/><ref refid="class_wallet" kindref="compound">Wallet&lt;T&gt;</ref><sp/>&amp;w)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//User<sp/>can<sp/>decide<sp/>how<sp/>much<sp/>of<sp/>currency<sp/>he<sp/>wants<sp/>to<sp/>exchange<sp/>it<sp/>is<sp/>assumed<sp/>that<sp/>deal<sp/>is<sp/>in<sp/>ratio<sp/>1:1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//If<sp/>user<sp/>Want&apos;s<sp/>to<sp/>exchange<sp/>more<sp/>than<sp/>they<sp/>actually<sp/>have<sp/>by<sp/>default<sp/>they<sp/>exchange<sp/>all<sp/>they<sp/>have</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(amount<sp/>&gt;<sp/>this-&gt;<ref refid="class_currency_1a097d3473c368ad0a8451722b66566d34" kindref="member">getAmountInWallet</ref>())</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unfortunatelly<sp/>you,<sp/>don&apos;t<sp/>have<sp/>enough<sp/>money,<sp/>So<sp/>we<sp/>will<sp/>use<sp/>all<sp/>you<sp/>have<sp/>instead!<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>amount<sp/>=<sp/>this-&gt;<ref refid="class_currency_1a097d3473c368ad0a8451722b66566d34" kindref="member">getAmountInWallet</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Hooray<sp/>you&apos;ve<sp/>exchanged<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>amount<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>of<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_currency_1aa58badfdfc8486a41e8f98466ea18c3e" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>on<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>backingCurrency<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;!!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>-=<sp/>amount;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w.<ref refid="class_wallet_1af66a7b74f0a389be6d3a788677238132" kindref="member">addMoney</ref>(backingCurrency,<sp/>amount);<sp/></highlight><highlight class="comment">//<sp/>as<sp/>wallet<sp/>is<sp/>a<sp/>map<sp/>we<sp/>can&apos;t<sp/>as<sp/>easily<sp/>add<sp/>to<sp/>it<sp/>withouth<sp/>checking<sp/>whether<sp/>such<sp/>currency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//exists<sp/>in<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Currencies/CryptoCurrencies/CurrencyBackedCryptoCurrency.h"/>
+  </compounddef>
+</doxygen>

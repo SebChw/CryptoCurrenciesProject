@@ -2,3 +2,5 @@ UML
 *.out
 *.exe
 .vscode
+logo.png
+Doxyfile

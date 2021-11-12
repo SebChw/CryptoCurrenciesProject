@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_backed_crypto_currency_8cpp" kind="file" language="C++">
+    <compoundname>BackedCryptoCurrency.cpp</compoundname>
+    <includes refid="_backed_crypto_currency_8h" local="yes">BackedCryptoCurrency.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Currencies/CryptoCurrencies/BackedCryptoCurrency.cpp</label>
+        <link refid="_backed_crypto_currency_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BackedCryptoCurrency.h</label>
+        <link refid="_backed_crypto_currency_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>../CryptoCurrency.h</label>
+        <link refid="_crypto_currency_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Currency.h</label>
+        <link refid="_currency_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;BackedCryptoCurrency.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="class_backed_crypto_currency_1abcf397575ee88a74873e498ad9b0d091" kindref="member">BackedCryptoCurrency::BackedCryptoCurrency</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>amount,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>needed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ass)<sp/>:<sp/><ref refid="class_crypto_currency" kindref="compound">CryptoCurrency</ref>(amount,<sp/>name,<sp/>needed)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>asset<sp/>=<sp/>ass;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_backed_crypto_currency_1a9e1d36f0266df0d2b6ca36cc034697a9" kindref="member">BackedCryptoCurrency::toString</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_crypto_currency_1a284f165c3611c7cfecb53d78225736cd" kindref="member">CryptoCurrency::toString</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Currency<sp/>is<sp/>backed<sp/>by<sp/>asset<sp/>equal<sp/>to:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>asset<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;$&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_backed_crypto_currency_1a2f3f493c62b12800be01ef8924dcdf5c" kindref="member">BackedCryptoCurrency::mine</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//We<sp/>can<sp/>mine<sp/>Backed<sp/>CryptoCurrencies<sp/>only<sp/>if<sp/>we<sp/>have<sp/>rank<sp/>higher<sp/>than<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rank<sp/>&gt;<sp/>4)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//If<sp/>we<sp/>finally<sp/>sucedded<sp/>we<sp/>increase<sp/>amount<sp/>of<sp/>that<sp/>currency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_crypto_currency_1a38c5d1590c96bddd3005efc6942493b8" kindref="member">performWork</ref>())</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="class_currency_1aa58badfdfc8486a41e8f98466ea18c3e" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>has<sp/>been<sp/>mined!<sp/>congratulations!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Cmon!<sp/>still<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_crypto_currency_1a848e1370cd40a8972357970a05ce00d4" kindref="member">howMuchWork</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;work<sp/>needs<sp/>to<sp/>be<sp/>done!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;You<sp/>must<sp/>have<sp/>rank<sp/>5<sp/>or<sp/>higher<sp/>to<sp/>mine<sp/>BackedCryptoCurrencies!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Currencies/CryptoCurrencies/BackedCryptoCurrency.cpp"/>
+  </compounddef>
+</doxygen>

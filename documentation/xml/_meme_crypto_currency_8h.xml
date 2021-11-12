@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_meme_crypto_currency_8h" kind="file" language="C++">
+    <compoundname>MemeCryptoCurrency.h</compoundname>
+    <includes refid="_crypto_currency_8h" local="yes">../CryptoCurrency.h</includes>
+    <includedby refid="_meme_crypto_currency_8cpp" local="yes">Currencies/CryptoCurrencies/MemeCryptoCurrency.cpp</includedby>
+    <includedby refid="_currency_factory_8h" local="yes">Utils/CurrencyFactory.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Currencies/CryptoCurrencies/MemeCryptoCurrency.h</label>
+        <link refid="_meme_crypto_currency_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>../CryptoCurrency.h</label>
+        <link refid="_crypto_currency_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Currency.h</label>
+        <link refid="_currency_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>Currencies/CryptoCurrencies/MemeCryptoCurrency.h</label>
+        <link refid="_meme_crypto_currency_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Utils/CurrencyExchange.h</label>
+        <link refid="_currency_exchange_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Utils/CurrencyFactory.h</label>
+        <link refid="_currency_factory_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Utils/Trader.h</label>
+        <link refid="_trader_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_meme_crypto_currency" prot="public">MemeCryptoCurrency</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../CryptoCurrency.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_meme_crypto_currency" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_meme_crypto_currency" kindref="compound">MemeCryptoCurrency</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_crypto_currency" kindref="compound">CryptoCurrency</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>memeName;<sp/></highlight><highlight class="comment">//<sp/>name<sp/>of<sp/>the<sp/>meme<sp/>in<sp/>whose<sp/>honor<sp/>the<sp/>Crypto<sp/>was<sp/>named</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_meme_crypto_currency_1a510eec81dd8dfedfa453e4b5df37e541" kindref="member">MemeCryptoCurrency</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_meme_crypto_currency_1a7f079e3350873f770c9b08b1db38d188" kindref="member">toString</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_meme_crypto_currency_1a313c0bc10d7dadcb8369ed9649002080" kindref="member">mine</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>we<sp/>need<sp/>to<sp/>define<sp/>this<sp/>to<sp/>be<sp/>able<sp/>to<sp/>create<sp/>object<sp/>of<sp/>that<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Currencies/CryptoCurrencies/MemeCryptoCurrency.h"/>
+  </compounddef>
+</doxygen>

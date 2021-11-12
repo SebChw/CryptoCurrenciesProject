@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_1ae79015463b412279a6c00b9705f27b" kind="dir">
+    <compoundname>Currencies</compoundname>
+    <innerdir refid="dir_174bce57e36277202e85d0d2297e1f1c">Currencies/CryptoCurrencies</innerdir>
+    <innerfile refid="_crypto_currency_8cpp">CryptoCurrency.cpp</innerfile>
+    <innerfile refid="_crypto_currency_8h">CryptoCurrency.h</innerfile>
+    <innerfile refid="_currency_8cpp">Currency.cpp</innerfile>
+    <innerfile refid="_currency_8h">Currency.h</innerfile>
+    <innerfile refid="_fiat_currency_8cpp">FiatCurrency.cpp</innerfile>
+    <innerfile refid="_fiat_currency_8h">FiatCurrency.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Currencies/"/>
+  </compounddef>
+</doxygen>

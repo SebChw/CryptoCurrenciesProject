@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_0a824aa1f70ce3b829ef378253b085da" kind="dir">
+    <compoundname>Utils</compoundname>
+    <innerfile refid="_currency_exchange_8cpp">CurrencyExchange.cpp</innerfile>
+    <innerfile refid="_currency_exchange_8h">CurrencyExchange.h</innerfile>
+    <innerfile refid="_currency_factory_8cpp">CurrencyFactory.cpp</innerfile>
+    <innerfile refid="_currency_factory_8h">CurrencyFactory.h</innerfile>
+    <innerfile refid="_currency_rates_provider_8cpp">CurrencyRatesProvider.cpp</innerfile>
+    <innerfile refid="_currency_rates_provider_8h">CurrencyRatesProvider.h</innerfile>
+    <innerfile refid="_trader_8cpp">Trader.cpp</innerfile>
+    <innerfile refid="_trader_8h">Trader.h</innerfile>
+    <innerfile refid="_wallet_8h">Wallet.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/"/>
+  </compounddef>
+</doxygen>

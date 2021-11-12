@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_commodity_backed_crypto_currency" kind="class" language="C++" prot="public">
+    <compoundname>CommodityBackedCryptoCurrency</compoundname>
+    <basecompoundref refid="class_backed_crypto_currency" prot="public" virt="non-virtual">BackedCryptoCurrency</basecompoundref>
+    <includes refid="_commodity_backed_crypto_currency_8h" local="no">CommodityBackedCryptoCurrency.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_commodity_backed_crypto_currency_1acfdca84f4c4bb86792feaf3cc08bbff2" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CommodityBackedCryptoCurrency::commodityType</definition>
+        <argsstring></argsstring>
+        <name>commodityType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h" line="7" column="12" bodyfile="Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_commodity_backed_crypto_currency_1a6fdc5f646515be4e56b5f51cb0a3c144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CommodityBackedCryptoCurrency::CommodityBackedCryptoCurrency</definition>
+        <argsstring>(float, string, int, int, string)</argsstring>
+        <name>CommodityBackedCryptoCurrency</name>
+        <param>
+          <type>float</type>
+          <defname>amount</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>needed</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>ass</defname>
+        </param>
+        <param>
+          <type>string</type>
+          <defname>com</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of a currency that user posses </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the currency </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>needed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>How much work is needed to mine that crypto </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>By how big asset currency is backed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>com</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Comodity backing currency </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h" line="10" column="5" bodyfile="Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_commodity_backed_crypto_currency_1a3bb8ab7899ee1b60429d250d498f0418" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CommodityBackedCryptoCurrency::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_backed_crypto_currency_1a9e1d36f0266df0d2b6ca36cc034697a9">toString</reimplements>
+        <briefdescription>
+<para>prints values of all parameters set inside the object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h" line="11" column="10" bodyfile="Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.cpp" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_commodity_backed_crypto_currency_1a3996fd12b936d54048b2146342fac542" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CommodityBackedCryptoCurrency::exchange</definition>
+        <argsstring>(int)</argsstring>
+        <name>exchange</name>
+        <reimplements refid="class_backed_crypto_currency_1a3d7c610e5d56f0917d0e55b3799292ad">exchange</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Function that exchanges some amount we have to the same amount of good that is backing the currency. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>how much of the currency wa want to exchange </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h" line="12" column="10" bodyfile="Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.cpp" bodystart="18" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BackedCryptoCurrency</label>
+        <link refid="class_backed_crypto_currency"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CommodityBackedCryptoCurrency</label>
+        <link refid="class_commodity_backed_crypto_currency"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CryptoCurrency</label>
+        <link refid="class_crypto_currency"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Currency</label>
+        <link refid="class_currency"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BackedCryptoCurrency</label>
+        <link refid="class_backed_crypto_currency"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CommodityBackedCryptoCurrency</label>
+        <link refid="class_commodity_backed_crypto_currency"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CryptoCurrency</label>
+        <link refid="class_crypto_currency"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Currency</label>
+        <link refid="class_currency"/>
+      </node>
+    </collaborationgraph>
+    <location file="Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h" line="5" column="1" bodyfile="Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h" bodystart="6" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_backed_crypto_currency_1abcf397575ee88a74873e498ad9b0d091" prot="public" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>BackedCryptoCurrency</name></member>
+      <member refid="class_commodity_backed_crypto_currency_1a6fdc5f646515be4e56b5f51cb0a3c144" prot="public" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>CommodityBackedCryptoCurrency</name></member>
+      <member refid="class_commodity_backed_crypto_currency_1acfdca84f4c4bb86792feaf3cc08bbff2" prot="private" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>commodityType</name></member>
+      <member refid="class_crypto_currency_1afa02582a8396eb457aee6c673065e0ed" prot="public" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>CryptoCurrency</name></member>
+      <member refid="class_currency_1a1cfa3a4f2ef3f176e3ccb61843c52fce" prot="public" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>Currency</name></member>
+      <member refid="class_commodity_backed_crypto_currency_1a3996fd12b936d54048b2146342fac542" prot="public" virt="virtual"><scope>CommodityBackedCryptoCurrency</scope><name>exchange</name></member>
+      <member refid="class_crypto_currency_1a9c34730ddc371863503cdcb3dc4e076c" prot="public" virt="virtual"><scope>CommodityBackedCryptoCurrency</scope><name>generateCurrency</name></member>
+      <member refid="class_currency_1a097d3473c368ad0a8451722b66566d34" prot="public" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>getAmountInWallet</name></member>
+      <member refid="class_currency_1aa58badfdfc8486a41e8f98466ea18c3e" prot="public" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>getName</name></member>
+      <member refid="class_crypto_currency_1a848e1370cd40a8972357970a05ce00d4" prot="public" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>howMuchWork</name></member>
+      <member refid="class_backed_crypto_currency_1a2f3f493c62b12800be01ef8924dcdf5c" prot="public" virt="virtual"><scope>CommodityBackedCryptoCurrency</scope><name>mine</name></member>
+      <member refid="class_currency_1a04868d88d1ae37a73b3cf5abb7eea0ac" prot="public" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>operator+=</name></member>
+      <member refid="class_currency_1ab9c183b78891ec7fe138c9b83e34497a" prot="public" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>operator-=</name></member>
+      <member refid="class_crypto_currency_1a38c5d1590c96bddd3005efc6942493b8" prot="public" virt="non-virtual"><scope>CommodityBackedCryptoCurrency</scope><name>performWork</name></member>
+      <member refid="class_commodity_backed_crypto_currency_1a3bb8ab7899ee1b60429d250d498f0418" prot="public" virt="virtual"><scope>CommodityBackedCryptoCurrency</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

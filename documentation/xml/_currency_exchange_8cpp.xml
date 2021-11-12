@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_currency_exchange_8cpp" kind="file" language="C++">
+    <compoundname>CurrencyExchange.cpp</compoundname>
+    <includes refid="_currency_exchange_8h" local="yes">CurrencyExchange.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>BackedCryptoCurrency.h</label>
+        <link refid="_backed_crypto_currency_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h</label>
+        <link refid="_commodity_backed_crypto_currency_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../Currencies/CryptoCurrencies/CurrencyBackedCryptoCurrency.h</label>
+        <link refid="_currency_backed_crypto_currency_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../Currencies/CryptoCurrencies/MemeCryptoCurrency.h</label>
+        <link refid="_meme_crypto_currency_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>../Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h</label>
+        <link refid="_not_backed_crypto_currency_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>../CryptoCurrency.h</label>
+        <link refid="_crypto_currency_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Currency.h</label>
+        <link refid="_currency_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>../Currencies/FiatCurrency.h</label>
+        <link refid="_fiat_currency_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Utils/CurrencyExchange.cpp</label>
+        <link refid="_currency_exchange_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CurrencyExchange.h</label>
+        <link refid="_currency_exchange_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>CurrencyFactory.h</label>
+        <link refid="_currency_factory_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CurrencyRatesProvider.h</label>
+        <link refid="_currency_rates_provider_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Trader.h</label>
+        <link refid="_trader_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../../Utils/Wallet.h</label>
+        <link refid="_wallet_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>chrono</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>math.h</label>
+      </node>
+      <node id="21">
+        <label>random</label>
+      </node>
+      <node id="16">
+        <label>stdlib.h</label>
+      </node>
+      <node id="22">
+        <label>thread</label>
+      </node>
+      <node id="17">
+        <label>time.h</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;CurrencyExchange.h&quot;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="class_currency_exchange_1a8e0449da8f281ab5b66a722be6505ca7" kindref="member">CurrencyExchange::CurrencyExchange</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pS,<sp/><ref refid="class_currency_rates_provider" kindref="compound">CurrencyRatesProvider</ref><sp/>*c)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>pSell<sp/>=<sp/>pS;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>pBuy<sp/>=<sp/>1<sp/>-<sp/>pS;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>bernoulli<sp/>=<sp/>bernoulli_distribution(pSell);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>I<sp/>consider<sp/>selling<sp/>crypto<sp/>as<sp/>a<sp/>success</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>uniform<sp/>=<sp/>uniform_real_distribution&lt;float&gt;(0.5,<sp/>1.0);<sp/></highlight><highlight class="comment">//<sp/>our<sp/>traders<sp/>are<sp/>generous<sp/>:)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>currencyRatesProvider<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_currency_exchange_1a203e466a38a61f91fb80e15605ba4d14" kindref="member">CurrencyExchange::calculate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>how_much,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>of_what,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>to_what)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>rate<sp/>=<sp/>currencyRatesProvider-&gt;<ref refid="class_currency_rates_provider_1ac14587c8c028259e3fa366f3aa1fdfda" kindref="member">getRate</ref>(of_what,<sp/>to_what);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>how_much<sp/>*<sp/>rate;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_currency_exchange_1a1e32972d916fbd25640218598d77ebda" kindref="member">CurrencyExchange::toString</ref>()</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Welcome<sp/>to<sp/>best<sp/>Currency<sp/>Exchenge<sp/>in<sp/>the<sp/>world!<sp/>We<sp/>encourage<sp/>you<sp/>to<sp/>play<sp/>here.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;PSell:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>pSell<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;PBuy:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>pBuy<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_currency_exchange_1a85eeeccb933a4f18d1c4fbf5786bdf6e" kindref="member">CurrencyExchange::exchange</ref>(<ref refid="class_currency" kindref="compound">Currency</ref><sp/>*cur1,<sp/><ref refid="class_currency" kindref="compound">Currency</ref><sp/>*cur2,<sp/><ref refid="class_wallet" kindref="compound">Wallet&lt;Currency&gt;</ref><sp/>*w)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Here<sp/>few<sp/>things<sp/>may<sp/>go<sp/>wrong.<sp/>Firstly<sp/>one<sp/>could<sp/>want<sp/>to<sp/>exchange<sp/>too<sp/>much<sp/>(someone<sp/>messed<sp/>things<sp/>with<sp/>uniform<sp/>generator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//and<sp/>it<sp/>returns<sp/>values<sp/>greater<sp/>than<sp/>1).<sp/>Other<sp/>thing<sp/>is<sp/>that<sp/>someone<sp/>may<sp/>want<sp/>to<sp/>exchanges<sp/>currencies<sp/>for<sp/>which<sp/>we<sp/>do<sp/>not<sp/>have<sp/>rates.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>how_much_to_exchange<sp/>=<sp/>cur1-&gt;<ref refid="class_currency_1a097d3473c368ad0a8451722b66566d34" kindref="member">getAmountInWallet</ref>()<sp/>*<sp/>uniform(generator);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>exchanged<sp/>=<sp/><ref refid="class_currency_exchange_1a203e466a38a61f91fb80e15605ba4d14" kindref="member">calculate</ref>(how_much_to_exchange,<sp/>cur1-&gt;<ref refid="class_currency_1aa58badfdfc8486a41e8f98466ea18c3e" kindref="member">getName</ref>(),<sp/>cur2-&gt;<ref refid="class_currency_1aa58badfdfc8486a41e8f98466ea18c3e" kindref="member">getName</ref>());</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*cur1<sp/>-=<sp/>how_much_to_exchange;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*cur2<sp/>+=<sp/>exchanged;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;We<sp/>exchanged<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>how_much_to_exchange<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>of<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>cur1-&gt;<ref refid="class_currency_1aa58badfdfc8486a41e8f98466ea18c3e" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>to:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>exchanged<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>of<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>cur2-&gt;<ref refid="class_currency_1aa58badfdfc8486a41e8f98466ea18c3e" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(invalid_argument<sp/>&amp;e)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Transcation<sp/>danied.<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.what()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cur1-&gt;<ref refid="class_currency_1a097d3473c368ad0a8451722b66566d34" kindref="member">getAmountInWallet</ref>()<sp/>&lt;<sp/>0.1)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Unfortunately<sp/>balance<sp/>is<sp/>below<sp/>0.1<sp/>for<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>cur1-&gt;<ref refid="class_currency_1aa58badfdfc8486a41e8f98466ea18c3e" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.<sp/>It<sp/>will<sp/>be<sp/>deleted<sp/>from<sp/>the<sp/>wallet<sp/>:(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*w<sp/>-=<sp/>cur1-&gt;<ref refid="class_currency_1aa58badfdfc8486a41e8f98466ea18c3e" kindref="member">getName</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_currency_exchange_1a35855710b354e685f18e032b91313420" kindref="member">CurrencyExchange::trade</ref>(<ref refid="class_trader" kindref="compound">Trader</ref><sp/>&amp;trader)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>decision;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!trader.cryptoWallet-&gt;isEmpty()<sp/>&amp;&amp;<sp/>!trader.fiatWallet-&gt;isEmpty())</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trader.rankUp();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Selecting<sp/>random<sp/>currencies<sp/>that<sp/>we<sp/>are<sp/>going<sp/>to<sp/>exchange</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_currency" kindref="compound">Currency</ref><sp/>*chosen_crypto<sp/>=<sp/>trader.cryptoWallet-&gt;getRandom();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_currency" kindref="compound">Currency</ref><sp/>*chosen_fiat<sp/>=<sp/>trader.fiatWallet-&gt;getRandom();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bernoulli(generator))</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_currency_exchange_1a85eeeccb933a4f18d1c4fbf5786bdf6e" kindref="member">exchange</ref>(chosen_crypto,<sp/>chosen_fiat,<sp/>trader.cryptoWallet);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_currency_exchange_1a85eeeccb933a4f18d1c4fbf5786bdf6e" kindref="member">exchange</ref>(chosen_fiat,<sp/>chosen_crypto,<sp/>trader.fiatWallet);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trader.<ref refid="class_trader_1a3392d3e231422c72ec1695cbdaf26cc9" kindref="member">toString</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Do<sp/>you<sp/>want<sp/>to<sp/>continue<sp/>(y/n)?:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>decision;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(decision<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_currency_exchange_1a67713fe5bb820fccfb3607de35ec8a8b" kindref="member">CurrencyExchange::simulateRanking</ref>()</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_trader" kindref="compound">Trader</ref><sp/>trader(</highlight><highlight class="stringliteral">&quot;Wojtek&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_currency" kindref="compound">Currency</ref><sp/>*crypto1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_currency_backed_crypto_currency" kindref="compound">CurrencyBackedCryptoCurrency&lt;FiatCurrency&gt;</ref>(30,<sp/></highlight><highlight class="stringliteral">&quot;DolarCoin&quot;</highlight><highlight class="normal">,<sp/>rand()<sp/>%<sp/>30,<sp/>rand()<sp/>%<sp/>10000,<sp/></highlight><highlight class="stringliteral">&quot;dolar&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_currency" kindref="compound">Currency</ref><sp/>*crypto2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_currency_backed_crypto_currency" kindref="compound">CurrencyBackedCryptoCurrency&lt;CryptoCurrency&gt;</ref>(60,<sp/></highlight><highlight class="stringliteral">&quot;NiceCoin&quot;</highlight><highlight class="normal">,<sp/>rand()<sp/>%<sp/>30,<sp/>rand()<sp/>%<sp/>10000,<sp/></highlight><highlight class="stringliteral">&quot;TrololoCoin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>trader.<ref refid="class_trader_1abfe5d7a321abeb54ce2171bd4530db15" kindref="member">addCrypto</ref>(crypto1);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>trader.<ref refid="class_trader_1abfe5d7a321abeb54ce2171bd4530db15" kindref="member">addCrypto</ref>(crypto2);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Each<sp/>user<sp/>has<sp/>it&apos;s<sp/>rank.<sp/>The<sp/>more<sp/>crypto<sp/>you<sp/>have<sp/>the<sp/>higher<sp/>rank<sp/>you<sp/>obtain&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>trader.<ref refid="class_trader_1a3392d3e231422c72ec1695cbdaf26cc9" kindref="member">toString</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>2;<sp/>i<sp/>&lt;<sp/>4;<sp/>i++)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_currency" kindref="compound">Currency</ref><sp/>*chosen_crypto<sp/>=<sp/>trader.cryptoWallet-&gt;getRandom();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*chosen_crypto<sp/>+=<sp/>(float)pow(10,<sp/>i);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trader.rankUp();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trader.<ref refid="class_trader_1a3392d3e231422c72ec1695cbdaf26cc9" kindref="member">toString</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>any;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;type<sp/>anything<sp/>to<sp/>continue:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>any;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;But<sp/>if<sp/>you<sp/>lose<sp/>your<sp/>crypto<sp/>then<sp/>you<sp/>rankDown!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>2;<sp/>i<sp/>&lt;<sp/>4;<sp/>i++)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_currency" kindref="compound">Currency</ref><sp/>*chosen_crypto<sp/>=<sp/>trader.cryptoWallet-&gt;getRandom();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*chosen_crypto<sp/>-=<sp/>chosen_crypto-&gt;<ref refid="class_currency_1a097d3473c368ad0a8451722b66566d34" kindref="member">getAmountInWallet</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trader.rankDown();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trader.<ref refid="class_trader_1a3392d3e231422c72ec1695cbdaf26cc9" kindref="member">toString</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>trader.<ref refid="class_trader_1a3392d3e231422c72ec1695cbdaf26cc9" kindref="member">toString</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;type<sp/>anything<sp/>to<sp/>continue:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>any;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_currency_exchange_1a46859fd96fcfa7f8ce73697ead8d8aba" kindref="member">CurrencyExchange::simulateMining</ref>()</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Mining<sp/>is<sp/>possible,<sp/>you<sp/>can<sp/>mine<sp/>different<sp/>crypto<sp/>based<sp/>on<sp/>you<sp/>rank&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_trader" kindref="compound">Trader</ref><sp/>trader(</highlight><highlight class="stringliteral">&quot;Lukasz&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_crypto_currency" kindref="compound">CryptoCurrency</ref><sp/>*crypto1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_currency_backed_crypto_currency" kindref="compound">CurrencyBackedCryptoCurrency&lt;FiatCurrency&gt;</ref>(30,<sp/></highlight><highlight class="stringliteral">&quot;DolarCoin&quot;</highlight><highlight class="normal">,<sp/>5,<sp/>rand()<sp/>%<sp/>10000,<sp/></highlight><highlight class="stringliteral">&quot;dolar&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_crypto_currency" kindref="compound">CryptoCurrency</ref><sp/>*crypto2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_not_backed_crypto_currency" kindref="compound">NotBackedCryptoCurrency</ref>(60,<sp/></highlight><highlight class="stringliteral">&quot;NiceCoin&quot;</highlight><highlight class="normal">,<sp/>10,<sp/></highlight><highlight class="stringliteral">&quot;GCD&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_crypto_currency" kindref="compound">CryptoCurrency</ref><sp/>*crypto3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_meme_crypto_currency" kindref="compound">MemeCryptoCurrency</ref>(60,<sp/></highlight><highlight class="stringliteral">&quot;DogeCoin&quot;</highlight><highlight class="normal">,<sp/>3,<sp/></highlight><highlight class="stringliteral">&quot;doge&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>crypto1-&gt;<ref refid="class_crypto_currency_1a9704d68a1c514bd8eaff52963d2121f8" kindref="member">mine</ref>(trader.<ref refid="class_trader_1a8c9c1d3f250159f45291115ff6513dfc" kindref="member">getRank</ref>());</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>crypto2-&gt;<ref refid="class_crypto_currency_1a9704d68a1c514bd8eaff52963d2121f8" kindref="member">mine</ref>(trader.<ref refid="class_trader_1a8c9c1d3f250159f45291115ff6513dfc" kindref="member">getRank</ref>());</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;DogeCoin<sp/>amount:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>crypto3-&gt;<ref refid="class_currency_1a097d3473c368ad0a8451722b66566d34" kindref="member">getAmountInWallet</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>crypto3-&gt;<ref refid="class_crypto_currency_1a9704d68a1c514bd8eaff52963d2121f8" kindref="member">mine</ref>(trader.<ref refid="class_trader_1a8c9c1d3f250159f45291115ff6513dfc" kindref="member">getRank</ref>());</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>2;<sp/>i++)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crypto3-&gt;<ref refid="class_crypto_currency_1a9704d68a1c514bd8eaff52963d2121f8" kindref="member">mine</ref>(trader.<ref refid="class_trader_1a8c9c1d3f250159f45291115ff6513dfc" kindref="member">getRank</ref>());</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;DogeCoin<sp/>amount:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>crypto3-&gt;<ref refid="class_currency_1a097d3473c368ad0a8451722b66566d34" kindref="member">getAmountInWallet</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>crypto3-&gt;<ref refid="class_crypto_currency_1a9704d68a1c514bd8eaff52963d2121f8" kindref="member">mine</ref>(trader.<ref refid="class_trader_1a8c9c1d3f250159f45291115ff6513dfc" kindref="member">getRank</ref>());</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>any;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;type<sp/>anything<sp/>to<sp/>continue:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>any;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>crypto1;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>crypto2;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>crypto3;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_currency_exchange_1a2706b2303f72012155c03b50d68ac4d9" kindref="member">CurrencyExchange::simulateBackedCurrencies</ref>()</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Backed<sp/>currencies<sp/>can<sp/>be<sp/>exchanged<sp/>on<sp/>backing<sp/>asset.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wallet" kindref="compound">Wallet&lt;CryptoCurrency&gt;</ref><sp/>w(</highlight><highlight class="stringliteral">&quot;Sebastian&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wallet" kindref="compound">Wallet&lt;FiatCurrency&gt;</ref><sp/>w2(</highlight><highlight class="stringliteral">&quot;Sebastian&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fiat_currency" kindref="compound">FiatCurrency</ref><sp/>*fiat<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_fiat_currency" kindref="compound">FiatCurrency</ref>(0,<sp/></highlight><highlight class="stringliteral">&quot;dolar&quot;</highlight><highlight class="normal">,<sp/>rand()<sp/>%<sp/>2);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_currency_backed_crypto_currency" kindref="compound">CurrencyBackedCryptoCurrency&lt;FiatCurrency&gt;</ref><sp/>*crypto1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_currency_backed_crypto_currency" kindref="compound">CurrencyBackedCryptoCurrency&lt;FiatCurrency&gt;</ref>(30,<sp/></highlight><highlight class="stringliteral">&quot;DolarCoin&quot;</highlight><highlight class="normal">,<sp/>rand()<sp/>%<sp/>30,<sp/>rand()<sp/>%<sp/>10000,<sp/></highlight><highlight class="stringliteral">&quot;dolar&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_currency_backed_crypto_currency" kindref="compound">CurrencyBackedCryptoCurrency&lt;CryptoCurrency&gt;</ref><sp/>*crypto2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_currency_backed_crypto_currency" kindref="compound">CurrencyBackedCryptoCurrency&lt;CryptoCurrency&gt;</ref>(60,<sp/></highlight><highlight class="stringliteral">&quot;NiceCoin&quot;</highlight><highlight class="normal">,<sp/>rand()<sp/>%<sp/>30,<sp/>rand()<sp/>%<sp/>10000,<sp/></highlight><highlight class="stringliteral">&quot;DolarCoin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_backed_crypto_currency" kindref="compound">BackedCryptoCurrency</ref><sp/>*crypto3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_commodity_backed_crypto_currency" kindref="compound">CommodityBackedCryptoCurrency</ref>(60,<sp/></highlight><highlight class="stringliteral">&quot;PigCoin&quot;</highlight><highlight class="normal">,<sp/>rand()<sp/>%<sp/>30,<sp/>rand()<sp/>%<sp/>10000,<sp/></highlight><highlight class="stringliteral">&quot;Pigs&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>crypto3-&gt;<ref refid="class_backed_crypto_currency_1a3d7c610e5d56f0917d0e55b3799292ad" kindref="member">exchange</ref>(80);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>w<sp/>+=<sp/>crypto1;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>w2<sp/>+=<sp/>fiat;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>w.<ref refid="class_wallet_1a09e53313e5e8eb1db7c653f661a92967" kindref="member">toString</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>w2.toString(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>crypto1-&gt;<ref refid="class_currency_backed_crypto_currency_1acd3e48eed6801aec1507eb8f92498204" kindref="member">exchange</ref>(30,<sp/>w2);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>crypto2-&gt;<ref refid="class_currency_backed_crypto_currency_1acd3e48eed6801aec1507eb8f92498204" kindref="member">exchange</ref>(50,<sp/>w);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>w.<ref refid="class_wallet_1a09e53313e5e8eb1db7c653f661a92967" kindref="member">toString</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>w2.toString(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>crypto2;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>crypto3;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Utils/CurrencyExchange.cpp"/>
+  </compounddef>
+</doxygen>

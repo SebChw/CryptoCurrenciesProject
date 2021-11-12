@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_crypto_currency_8h" kind="file" language="C++">
+    <compoundname>CryptoCurrency.h</compoundname>
+    <includes refid="_currency_8h" local="yes">Currency.h</includes>
+    <includedby refid="_backed_crypto_currency_8h" local="yes">Currencies/CryptoCurrencies/BackedCryptoCurrency.h</includedby>
+    <includedby refid="_meme_crypto_currency_8h" local="yes">Currencies/CryptoCurrencies/MemeCryptoCurrency.h</includedby>
+    <includedby refid="_not_backed_crypto_currency_8h" local="yes">Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h</includedby>
+    <includedby refid="_crypto_currency_8cpp" local="yes">Currencies/CryptoCurrency.cpp</includedby>
+    <includedby refid="_trader_8h" local="yes">Utils/Trader.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Currencies/CryptoCurrency.h</label>
+        <link refid="_crypto_currency_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Currency.h</label>
+        <link refid="_currency_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>math.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>Currencies/CryptoCurrencies/BackedCryptoCurrency.h</label>
+        <link refid="_backed_crypto_currency_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h</label>
+        <link refid="_commodity_backed_crypto_currency_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Currencies/CryptoCurrencies/CurrencyBackedCryptoCurrency.h</label>
+        <link refid="_currency_backed_crypto_currency_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Currencies/CryptoCurrencies/MemeCryptoCurrency.h</label>
+        <link refid="_meme_crypto_currency_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h</label>
+        <link refid="_not_backed_crypto_currency_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Currencies/CryptoCurrency.h</label>
+        <link refid="_crypto_currency_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Utils/CurrencyExchange.h</label>
+        <link refid="_currency_exchange_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Utils/CurrencyFactory.h</label>
+        <link refid="_currency_factory_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Utils/Trader.h</label>
+        <link refid="_trader_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_crypto_currency" prot="public">CryptoCurrency</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Currency.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_crypto_currency" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_crypto_currency" kindref="compound">CryptoCurrency</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_currency" kindref="compound">Currency</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>workNeededToGetCrypto;<sp/></highlight><highlight class="comment">//<sp/>How<sp/>much<sp/>work<sp/>is<sp/>needed<sp/>to<sp/>get<sp/>one<sp/>coin<sp/>of<sp/>that<sp/>crypto</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>workDone;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>how<sp/>much<sp/>work<sp/>we<sp/>did<sp/>to<sp/>&quot;mine&quot;<sp/>one<sp/>coin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_crypto_currency_1afa02582a8396eb457aee6c673065e0ed" kindref="member">CryptoCurrency</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_crypto_currency_1a284f165c3611c7cfecb53d78225736cd" kindref="member">toString</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_crypto_currency_1a9c34730ddc371863503cdcb3dc4e076c" kindref="member">generateCurrency</ref>();<sp/></highlight><highlight class="comment">//All<sp/>of<sp/>functions<sp/>below<sp/>could<sp/>be<sp/>usefull<sp/>if<sp/>we<sp/>would<sp/>like<sp/>to<sp/>extend<sp/>functonalities<sp/>of<sp/>our<sp/>system</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_crypto_currency_1a38c5d1590c96bddd3005efc6942493b8" kindref="member">performWork</ref>();<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>basically<sp/>is<sp/>used<sp/>to<sp/>change<sp/>workDone<sp/><sp/>and<sp/>workNeededToGetCrypto<sp/>parameters,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this<sp/>function<sp/>is<sp/>used<sp/>by<sp/>inheriting<sp/>classes<sp/>so<sp/>that<sp/>workNeededToGetCrypto<sp/>and<sp/>workDone<sp/>still<sp/>can<sp/>be<sp/>private</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>!<sp/>This<sp/>function<sp/>returns<sp/>bool<sp/>as<sp/>different<sp/>sub<sp/>classes<sp/>my<sp/>react<sp/>differently<sp/>when<sp/>crypto<sp/>has<sp/>been<sp/>mined</highlight></codeline>
+<codeline lineno="19" refid="class_crypto_currency_1a9704d68a1c514bd8eaff52963d2121f8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_crypto_currency_1a9704d68a1c514bd8eaff52963d2121f8" kindref="member">mine</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rank)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>Each<sp/>type<sp/>of<sp/>cryptoCurrency<sp/>may<sp/>have<sp/>different<sp/>way<sp/>of<sp/>mining.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>is<sp/>rank<sp/>of<sp/>the<sp/>user.<sp/>In<sp/>our<sp/>service<sp/>you<sp/>can<sp/>mine<sp/>different<sp/>crypto&apos;s<sp/>depending<sp/>on<sp/>your<sp/>rank.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_crypto_currency_1a848e1370cd40a8972357970a05ce00d4" kindref="member">howMuchWork</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Currencies/CryptoCurrency.h"/>
+  </compounddef>
+</doxygen>

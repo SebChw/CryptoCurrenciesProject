@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_trader" kind="class" language="C++" prot="public">
+    <compoundname>Trader</compoundname>
+    <includes refid="_trader_8h" local="no">Trader.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_trader_1a3e8e79d5e5d05b486eb4259ed0917574" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Trader::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="11" column="12" bodyfile="Utils/Trader.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trader_1abf00cc72e7fc1d9d9266824199ea35c8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Trader::rank</definition>
+        <argsstring></argsstring>
+        <name>rank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="12" column="9" bodyfile="Utils/Trader.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trader_1aaee96514f486253f23e39d3b6b917d30" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Trader::goal</definition>
+        <argsstring></argsstring>
+        <name>goal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="13" column="9" bodyfile="Utils/Trader.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trader_1a74d42f2be671f5510492c5beda428de1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_wallet" kindref="compound">Wallet</ref>&lt; <ref refid="class_currency" kindref="compound">Currency</ref> &gt; *</type>
+        <definition>Wallet&lt;Currency&gt;* Trader::fiatWallet</definition>
+        <argsstring></argsstring>
+        <name>fiatWallet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="14" column="12" bodyfile="Utils/Trader.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_trader_1a3df01f0a0cb35fb6c4f62e7e4b141ff7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_wallet" kindref="compound">Wallet</ref>&lt; <ref refid="class_currency" kindref="compound">Currency</ref> &gt; *</type>
+        <definition>Wallet&lt;Currency&gt;* Trader::cryptoWallet</definition>
+        <argsstring></argsstring>
+        <name>cryptoWallet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="15" column="12" bodyfile="Utils/Trader.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_trader_1a8d66fc5191b92486b74e411df0d9f616" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class CurrencyExchange</definition>
+        <argsstring></argsstring>
+        <name>CurrencyExchange</name>
+        <param>
+          <type><ref refid="class_currency_exchange" kindref="compound">CurrencyExchange</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="25" column="18" bodyfile="Utils/Trader.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_trader_1acba8af0a3639178c0e349c1ec11f6db8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Trader::rankUp</definition>
+        <argsstring>()</argsstring>
+        <name>rankUp</name>
+        <briefdescription>
+<para>Function that checks whether user has enough cryptoCurrencies to be rankedUp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="17" column="10" bodyfile="Utils/Trader.cpp" bodystart="42" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trader_1a4ad26a959a585d4e2c1e776a06ec2ddb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Trader::rankDown</definition>
+        <argsstring>()</argsstring>
+        <name>rankDown</name>
+        <briefdescription>
+<para>Functon that check whether user has enough CryptoCurrencies to be ranked down. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="18" column="10" bodyfile="Utils/Trader.cpp" bodystart="52" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_trader_1a353fbe9a334e6251035732a47b32a08d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Trader::Trader</definition>
+        <argsstring>(string)</argsstring>
+        <name>Trader</name>
+        <param>
+          <type>string</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+<para>For security reasons I think this should be private. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the trader </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="20" column="5" bodyfile="Utils/Trader.cpp" bodystart="4" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trader_1a33fc5edaa84a6e19c2be761d51dd58ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Trader::~Trader</definition>
+        <argsstring>()</argsstring>
+        <name>~Trader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="21" column="5" bodyfile="Utils/Trader.cpp" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trader_1a3392d3e231422c72ec1695cbdaf26cc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Trader::toString</definition>
+        <argsstring>(bool)</argsstring>
+        <name>toString</name>
+        <param>
+          <type>bool</type>
+          <defname>is_short</defname>
+        </param>
+        <briefdescription>
+<para>Print information about trader. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_short</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to print all information about possesed currencies or just their amounts </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="22" column="10" bodyfile="Utils/Trader.cpp" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trader_1ad35861ad788e0a2d474fb005e5964876" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Trader::addRealMoney</definition>
+        <argsstring>(Currency *)</argsstring>
+        <name>addRealMoney</name>
+        <param>
+          <type><ref refid="class_currency" kindref="compound">Currency</ref> *</type>
+          <defname>money</defname>
+        </param>
+        <briefdescription>
+<para>Function adding some currency to the wallet of realMoney. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="23" column="10" bodyfile="Utils/Trader.cpp" bodystart="30" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trader_1abfe5d7a321abeb54ce2171bd4530db15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Trader::addCrypto</definition>
+        <argsstring>(Currency *)</argsstring>
+        <name>addCrypto</name>
+        <param>
+          <type><ref refid="class_currency" kindref="compound">Currency</ref> *</type>
+          <defname>money</defname>
+        </param>
+        <briefdescription>
+<para>Function adding some currency to the wallet of cryptoMoney. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="24" column="10" bodyfile="Utils/Trader.cpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_trader_1a8c9c1d3f250159f45291115ff6513dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Trader::getRank</definition>
+        <argsstring>()</argsstring>
+        <name>getRank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>rank rank of the trader </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/Trader.h" line="26" column="9" bodyfile="Utils/Trader.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class representing user of our crypto currency system. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Utils/Trader.h" line="9" column="1" bodyfile="Utils/Trader.h" bodystart="10" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_trader_1abfe5d7a321abeb54ce2171bd4530db15" prot="public" virt="non-virtual"><scope>Trader</scope><name>addCrypto</name></member>
+      <member refid="class_trader_1ad35861ad788e0a2d474fb005e5964876" prot="public" virt="non-virtual"><scope>Trader</scope><name>addRealMoney</name></member>
+      <member refid="class_trader_1a3df01f0a0cb35fb6c4f62e7e4b141ff7" prot="private" virt="non-virtual"><scope>Trader</scope><name>cryptoWallet</name></member>
+      <member refid="class_trader_1a8d66fc5191b92486b74e411df0d9f616" prot="public" virt="non-virtual"><scope>Trader</scope><name>CurrencyExchange</name></member>
+      <member refid="class_trader_1a74d42f2be671f5510492c5beda428de1" prot="private" virt="non-virtual"><scope>Trader</scope><name>fiatWallet</name></member>
+      <member refid="class_trader_1a8c9c1d3f250159f45291115ff6513dfc" prot="public" virt="non-virtual"><scope>Trader</scope><name>getRank</name></member>
+      <member refid="class_trader_1aaee96514f486253f23e39d3b6b917d30" prot="private" virt="non-virtual"><scope>Trader</scope><name>goal</name></member>
+      <member refid="class_trader_1a3e8e79d5e5d05b486eb4259ed0917574" prot="private" virt="non-virtual"><scope>Trader</scope><name>name</name></member>
+      <member refid="class_trader_1abf00cc72e7fc1d9d9266824199ea35c8" prot="private" virt="non-virtual"><scope>Trader</scope><name>rank</name></member>
+      <member refid="class_trader_1a4ad26a959a585d4e2c1e776a06ec2ddb" prot="private" virt="non-virtual"><scope>Trader</scope><name>rankDown</name></member>
+      <member refid="class_trader_1acba8af0a3639178c0e349c1ec11f6db8" prot="private" virt="non-virtual"><scope>Trader</scope><name>rankUp</name></member>
+      <member refid="class_trader_1a3392d3e231422c72ec1695cbdaf26cc9" prot="public" virt="non-virtual"><scope>Trader</scope><name>toString</name></member>
+      <member refid="class_trader_1a353fbe9a334e6251035732a47b32a08d" prot="public" virt="non-virtual"><scope>Trader</scope><name>Trader</name></member>
+      <member refid="class_trader_1a33fc5edaa84a6e19c2be761d51dd58ad" prot="public" virt="non-virtual"><scope>Trader</scope><name>~Trader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
