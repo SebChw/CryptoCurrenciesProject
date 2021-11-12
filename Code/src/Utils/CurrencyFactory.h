@@ -1,10 +1,10 @@
 #pragma once
 
-#include "MemeCryptoCurrency.h" //! <> then compiler will search in predefined folders with "" it search in the same directory at first!!
-#include "NotBackedCryptoCurrency.h"
-#include "CurrencyBackedCryptoCurrency.h"
-#include "CommodityBackedCryptoCurrency.h"
-#include "FiatCurrency.h"
+#include "../Currencies/CryptoCurrencies/MemeCryptoCurrency.h" //! <> then compiler will search in predefined folders with "" it search in the same directory at first!!
+#include "../Currencies/CryptoCurrencies/NotBackedCryptoCurrency.h"
+#include "../Currencies/CryptoCurrencies/CurrencyBackedCryptoCurrency.h"
+#include "../Currencies/CryptoCurrencies/CommodityBackedCryptoCurrency.h"
+#include "../Currencies/FiatCurrency.h"
 #include <stdlib.h>
 #include <time.h>
 #include <vector>

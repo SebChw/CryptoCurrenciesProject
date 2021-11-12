@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Wallet.h"
-#include "CryptoCurrency.h"
-#include "FiatCurrency.h"
+#include "../Currencies/CryptoCurrency.h"
+#include "../Currencies/FiatCurrency.h"
 #include "CurrencyExchange.h"
 class Trader
 {

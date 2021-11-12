@@ -1,6 +1,6 @@
-#include "Wallet.h"
-#include "CurrencyExchange.h"
-#include "CurrencyRatesProvider.h"
+#include "Utils/Wallet.h"
+#include "Utils/CurrencyExchange.h"
+#include "Utils/CurrencyRatesProvider.h"
 #include <math.h>
 #include <iostream>
 #include <algorithm>

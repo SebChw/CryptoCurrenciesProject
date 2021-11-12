@@ -1,0 +1,1 @@
+To compile everything use: g++ -o main.exe *.cpp ./Utils/*.cpp ./Currencies/*.cpp ./Currencies/CryptoCurrencies/*.cpp

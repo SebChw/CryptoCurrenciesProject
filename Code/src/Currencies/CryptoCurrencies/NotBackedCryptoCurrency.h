@@ -1,6 +1,6 @@
 #pragma once
 
-#include "CryptoCurrency.h"
+#include "../CryptoCurrency.h"
 
 class NotBackedCryptoCurrency : public CryptoCurrency
 {

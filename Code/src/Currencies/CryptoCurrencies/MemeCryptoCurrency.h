@@ -1,5 +1,5 @@
 #pragma once
-#include "CryptoCurrency.h"
+#include "../CryptoCurrency.h"
 
 class MemeCryptoCurrency : public CryptoCurrency
 {

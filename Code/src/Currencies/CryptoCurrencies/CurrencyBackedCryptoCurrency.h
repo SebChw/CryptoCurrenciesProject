@@ -1,6 +1,6 @@
 #pragma once
 #include "BackedCryptoCurrency.h"
-#include "Wallet.h"
+#include "../../Utils/Wallet.h"
 
 //As I wanted to kill two birds with one stone I created template so this Currency can be backed by MameCurrency, FiatCurrency or any other.
 template <class T>
